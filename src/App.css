@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
+.Todo {
+  background: #fff;
+  margin: 6rem auto 0;
+  max-width: 90%;
+  width: 50rem;
+  height: 80vh;
+  padding: 4rem 2rem;
+  border-radius: 0.5rem;
+  overflow-y: auto;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Todo h3 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Todo__box--form {
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+.Todo__input {
+  font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.Todo__btn--add {
+  font-size: 3rem;
+  background: #008000;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.Todo__btn--add:hover {
+  background: #00a200;
+}
+
+.Todo__list {
+  width: 80%;
+}
+
+.Todo__item {
+  color: #fff;
+  background: dodgerblue;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Todo__item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.Todo__btn--delete {
+  font-size: 2rem;
+  background: #f00;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.Todo__btn--delete:hover {
+  background: #fff;
+  color: #f00;
 }
